@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon Rivals</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1 class="text-center"><span class="red-text">Pokemon</span> Rivals</h1>
+			<hr>
+			<h3 class="text-center">Show off your Team and Prepare for Battle!</h3>
+			<br>
+
+			<div class="text-center">
+				<a href="/"><button type="button" class="btn btn-lg btn-default">View Teams</button></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Enter Your Team Information</h4>
+					</div>
+					<div class="survey panel-body">
+
+                        <form>
+
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label for="trainerNameForm">Your Name</label>
+                                    <input type="text" class="form-control" id="trainerNameForm" placeholder="Enter name">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <label for="trainerPhotoForm">Link To Your Avatar/Photo</label>
+                                    <input type="text" class="form-control" id="trainerPhotoForm" placeholder="Enter photo url">
+                                </div>
+                            </div>
+                            
+                            <div class="row poke-select">
+                                <div class="form-group col-md-6">
+                                    <label for="poke1Name">First Pokemon Species</label>
+                                    <select class="form-control" id="poke1Name"></select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="poke1Lvl">First Pokemon Level</label>
+                                    <select class="form-control" id="poke1Lvl"></select>
+                                </div>
+                            </div>
+
+							<div class="row poke-select">
+                                <div class="form-group col-md-6">
+                                    <label for="poke2Name">Second Pokemon Species</label>
+                                    <select class="form-control" id="poke2Name"></select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="poke2Lvl">Second Pokemon Level</label>
+                                    <select class="form-control" id="poke2Lvl"></select>
+                                </div>
+                            </div>
+
+							<div class="row poke-select">
+                                <div class="form-group col-md-6">
+                                    <label for="poke3Name">Third Pokemon Species</label>
+                                    <select class="form-control" id="poke3Name"></select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="poke3Lvl">Third Pokemon Level</label>
+                                    <select class="form-control" id="poke3Lvl"></select>
+                                </div>
+                            </div>
+                            
+                            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	    <footer class="footer">
+	      <div class="container">
+	        <p>Created By David Mansen</p>
+	      </div>
+	    </footer>
+
+	</div>
+
+
+
+	<div class="modal fade" id="rivalModal" role="dialog">
+		<div class="modal-dialog">
+			<h1 class="modal-title">Your RIVAL</h1>
+			<div class="modal-body" id="rivalPanel"></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<script src="assets/javascript/survey.js"></script>
