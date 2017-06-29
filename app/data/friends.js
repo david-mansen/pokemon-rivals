@@ -2,7 +2,7 @@ var friends = [
 	{
 		"trainerName": "Gary",
 		"photo": "https://cdn.bulbagarden.net/upload/a/ad/Gary_Oak_BW.png",
-		"teamRating": 134,
+		"teamRating": 305,
 		"poke1": {id: 149, level: 70},
 		"poke2": {id: 6, level: 60},
 		"poke3":{id: 150, level: 99}
@@ -10,10 +10,10 @@ var friends = [
 	{
 		"trainerName": "Bob",
 		"photo": "https://avatars2.githubusercontent.com/u/348865?v=3&s=400",
-		"teamRating": 134,
-		"poke1": {id: 108, level: 55},
-		"poke2": {id: 132, level: 30},
-		"poke3":{id: 122, level: 40}
+		"teamRating": 91,
+		"poke1": {id: 108, level: 30},
+		"poke2": {id: 25, level: 30},
+		"poke3":{id: 68, level: 31}
 	},
 	{
 		"trainerName": "Justin",
